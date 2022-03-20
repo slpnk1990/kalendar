@@ -3,7 +3,7 @@ from kalevent.models import Event
 
 class AllEventsListView(ListView):
 
-    template_name = 'kalevent/events_list.html'
+    template_name = 'calendarapp/events_list.html'
     model = Event
 
     def get_queryset(self):
@@ -11,7 +11,7 @@ class AllEventsListView(ListView):
 
 class RunningEventsListView(ListView):
 
-    template_name = 'kalevent/events_list.html'
+    template_name = 'calendarapp/events_list.html'
     model = Event
 
     def get_queryset(self):
